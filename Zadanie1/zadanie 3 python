@@ -1,0 +1,13 @@
+n = int(input("Ile ocen chcesz wprowadzic? "))
+
+suma = 0
+for i in range(1, n + 1):
+    suma += float(input(f"Ocena {i} (1-6): ").replace(",", "."))
+
+srednia = suma / n
+print(f"Srednia: {srednia:.2f}")
+
+if srednia >= 3.0:
+    print("Uczen zdal.")
+else:
+    print("Uczen nie zdal.")
