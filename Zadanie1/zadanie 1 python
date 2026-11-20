@@ -1,0 +1,17 @@
+a = float(input("Podaj pierwsza liczbe: ").replace(",", "."))
+b = float(input("Podaj druga liczbe: ").replace(",", "."))
+op = input("Podaj operacje (+, -, *, /): ").strip()
+
+if op == "+":
+    print("Wynik:", a + b)
+elif op == "-":
+    print("Wynik:", a - b)
+elif op == "*":
+    print("Wynik:", a * b)
+elif op == "/":
+    if b == 0:
+        print("Blad: dzielenie przez zero!")
+    else:
+        print("Wynik:", a / b)
+else:
+    print("Nieznana operacja.")
